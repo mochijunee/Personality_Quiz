@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Personality Quiz</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- import the webpage's stylesheet -->
+	<link rel="stylesheet" href="/style.css">
+
+	<!-- import the webpage's javascript file -->
+	<script src="/script.js" defer></script>
+
+  <!-- import fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Inconsolata:wght@400;800&family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+		<h1>Dog Personalities!</h1>
+    <p>This quiz will tell you if you are Cruz, Lloyd, or Teddy: 3 dogs Audrey has dog-sitted.</p>
+    <br>
+	</header>
+	<main>
+		<h2>What is your usual mood?</h2>
+		<div class="question">
+
+			<div class="answer-choice">
+				<img src="assets/happy.jpg" alt="Two smiling emoji plushes inside an emoji-pattern box.">
+        <br>
+        <button id="q1a1">Happy</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/calm.jpg" alt="A woman meditating on a cliff in a sunny forest.">
+        <br>
+        <button id="q1a2">Calm</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/grumpy.jpg" alt="A cream-colored cat being pet by a human.">
+        <br>
+        <button id="q1a3">Grumpy</button>
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Which one of the options describes you most accurately?</h2>
+		<div class="question">
+
+			<div class="answer-choice">
+        <img src="assets/extrovert.jpg" alt="A group of friends toasting beers over a fire.">
+        <br>
+        <button id="q2a1">Extrovert</button>
+      </div>
+      
+      <div class="answer-choice">
+				<img src="assets/ambivert.jpg" alt="A group of young teenagers playing arcade games individually.">
+        <br>
+        <button id="q2a2">Ambivert</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/introvert.jpg" alt="A woman reading a book in bed.">
+        <br>
+        <button id="q2a3">Introvert</button>
+      </div>
+
+    </div> 
+
+    <br>
+    <br>
+    
+    <h2>Pick an activity</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/outside.jpg" alt="A woman running with her dog in a flowery field.">
+        <br>
+        <button id="q3a1">Playing</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/cuddling.jpg" alt="A gray cat and an orange cat cuddling by the window.">
+        <br>
+        <button id="q3a2">Cuddling</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/napping.jpg" alt="A woman sleeping in her bed.">
+        <br>
+        <button id="q3a3">Napping</button>
+      </div>
+
+    </div> 
+
+    <br>
+    <br>
+
+    <h2>Do you trust people?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/counseling.jpg" alt="Two women talking together in a counseling session.">
+        <br>
+        <button id="q4a1">Of course!</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/food.jpg" alt="A brown dog staring at his owner who is eating at a dining table.">
+        <br>
+        <button id="q4a2">Yes, if they give me food</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/alone.jpg" alt="One Brown chess piece scattered away from multiple red chess pieces.">
+        <br>
+        <button id="q4a3">I try not to</button>
+      </div>
+
+    </div> 
+
+    <br>
+    <br>
+    
+    <h2>Pick one word to describe yourself</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/kind.jpg" alt="3 brown tiles on a sandy surface. The left-most tile has a sun drawn on it, the middle has an arrow pointing to the right tile, and the right tile has a smiley face drawn on it.">
+        <br>
+        <button id="q5a1">Kind</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/funny.jpg" alt="A close-up photo of an ostrich with its mouth open.">
+        <br>
+        <button id="q5a2">Funny</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/emo.jpg" alt="Picture of a human skull and a black background.">
+        <br>
+        <button id="q5a3">Emo</button>
+      </div>
+      
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Finally, how would you greet someone you just met?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/greeting.jpg" alt="Elderly woman holding the two front paws of a dog.">
+        <br>
+        <button id="q6a1">With enthusiasm</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/smile.jpg" alt="Woman with curly hair smiling and waving">
+        <br>
+        <button id="q6a2">With a smile</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/isolated.jpg" alt="Man walking along a foggy path surrounded by trees.">
+        <br>
+        <button id="q6a3">No</button>
+      </div>
+      
+    </div>
+    
+    <br>
+    <h2>Get your results!</h2>
+    <br>
+    <br>
+    
+    <div>
+      <button id="displayResult">Who Am I?</button>
+      <h2 id="result">You are...</h2>
+    </div>
+    <button id="restart">Restart Quiz</button>
+  </main>
+  </body>
+</html>
